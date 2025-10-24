@@ -33,12 +33,17 @@ public class StringBuffer3 {
 		
 		// length() returns the number of characters in the given String
 		StringBuffer sb4 = new StringBuffer();
-		sb4.append("Harshith");
+		sb4.append("Harshith kumar M ");
 		System.out.println(sb4.length());
 		
 		//StringBuffer is synchronous so slow in performance , where single thread can act on a single string object
 		
 		System.out.println(sb4.charAt(4)); // returns the character at the specific index
+		
+		sb4.trimToSize(); // it trims the remainig empty slots of the array and makes the object length actual characters size
+		System.out.println(sb4);
+		System.out.println(sb4.capacity());
+		
 	}
 
 }
